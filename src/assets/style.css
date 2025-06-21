@@ -1,0 +1,137 @@
+/* General */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3, h5, h6 {
+  font-weight: 600;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #1b2a4e;
+  color: white;
+  height: 100vh;
+  padding: 20px 15px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.sidebar .nav-link {
+  color: white;
+  margin: 5px 0;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background-color: #293b6b;
+}
+
+/* Avatar */
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Info Boxes */
+.info-box {
+  background: #f2f6ff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* Calendar */
+.calendar {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.calendar table {
+  width: 100%;
+  font-size: 13px;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 4px;
+}
+
+.calendar th,
+.calendar td {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: #f0f4f8;
+  color: #333;
+  font-weight: 500;
+  vertical-align: middle;
+  transition: background-color 0.2s;
+  position: relative;
+}
+
+.calendar td.bg-info {
+  background-color: #0d6efd !important;
+  color: white;
+}
+
+.calendar td.event::after {
+  content: '•';
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  color: #dc3545;
+}
+
+.calendar td.weekend {
+  background-color: #e0e7ff;
+  color: #1d1b64;
+}
+
+/* Events Box */
+.events-box {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.events-box .event-item {
+  display: flex;
+  align-items: start;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.events-box .event-item i {
+  font-size: 8px;
+  margin-right: 10px;
+  color: #dc3545;
+}
+
+.login-page {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-box {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
